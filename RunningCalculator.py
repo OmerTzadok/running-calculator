@@ -1,5 +1,5 @@
 import tkinter.font as font
-from Services import DPIAwarness
+from Services import DPIAwareness
 from UI import MainFrame
 
 DPIAwarness.set_dpi_awarness()
