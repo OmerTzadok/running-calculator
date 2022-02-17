@@ -2,7 +2,7 @@ import tkinter.font as font
 from Services import DPIAwareness
 from UI import MainFrame
 
-DPIAwarness.set_dpi_awarness()
+DPIAwareness.set_dpi_awarness()
 
 root = MainFrame.RunningConverter()
 
