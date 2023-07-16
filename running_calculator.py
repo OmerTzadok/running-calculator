@@ -1,10 +1,10 @@
 import tkinter.font as font
-from Services import DPIAwareness
-from UI import MainFrame
+from services import dpi_awareness
+from ui import main_frame
 
-DPIAwareness.set_dpi_awareness()
+dpi_awareness.set_dpi_awareness()
 
-root = MainFrame.RunningConverter()
+root = main_frame.RunningConverter()
 
 font.nametofont("TkDefaultFont").configure(size=15)
 font.nametofont("TkTextFont").configure(size=15)

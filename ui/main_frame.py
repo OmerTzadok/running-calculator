@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
-from UI import PaceTimeToDistanceFrame as PTTD
-from UI import TimeDistanceToPaceFrame as TDTP
+from ui import pace_time_to_distance_frame as pttd
+from ui import time_distance_to_pace_frame as tdtp
 
 class RunningConverter(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -13,12 +13,12 @@ class RunningConverter(tk.Tk):
         container = ttk.Frame(self)
         container.grid(padx=10, pady=10, sticky="EW")
 
-        for FrameClass in (PTTD.PaceTimeToDistance, TDTP.TimeDistanceToPace):
+        for FrameClass in (pttd.PaceTimeToDistance, tdtp.TimeDistanceToPace):
             frame = FrameClass(container, self)
             self.frames[FrameClass] = frame
             frame.grid(row=0, column=0, sticky="NSEW")
 
-        self.show_frame(PTTD.PaceTimeToDistance)
+        self.show_frame(pttd.PaceTimeToDistance)
 
     def show_frame(self, container):
         frame = self.frames[container]
