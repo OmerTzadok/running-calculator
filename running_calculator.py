@@ -1,8 +1,8 @@
 import tkinter.font as font
-from services import dpi_awareness
+from services import dpi_awareness_set
 from ui import main_frame
 
-dpi_awareness.set_dpi_awareness()
+dpi_awareness_set.set_dpi_awareness()
 
 root = main_frame.RunningConverter()
 
